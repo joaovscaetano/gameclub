@@ -1,2 +1,2 @@
-# terkers
+# tenkers
  Trabalho de Redes de Computadores
