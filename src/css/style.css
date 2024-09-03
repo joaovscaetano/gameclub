@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    /*
+  --cor1: #9ee4ff;
+  --cor2: #6eb2f2;
+  --cor3: #5287e9;
+  --cor4: #3f71cc;
+  --cor5: #075197;
+*/
+    --fonte-padrao: 'Poppins', 'Arial', sans-serif;
+    --fonte-titulo-jogos: 'Open Sans', sans-serif;
+    --fonte-estilo: 'Major Mono Display', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+/* CABEÇALHO */
+
+#cabecalho {
+    /*background-color: var(--cor2);*/
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cabecalho img {
+    max-width: 150px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top: -20px;
+    left: 40px;
+}
+
+/*
+#logo:hover {
+  animation: rodar .6s forwards;
+}
+
+@keyframes rodar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+#cabecalho>h1 {
+    font-family: var(--fonte-estilo);
+    font-size: 2em;
+}
+
+/* NAVEGAÇÃO */
+
+#navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 20px;
+    background-color: #eee;
+    /*box-shadow: 2px 2px 8px var(--cor3);*/
+    border-bottom: 1px solid #aaa;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.links-menu {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.links-menu:hover {
+    /*background-color: var(--cor3);
+  color: white;*/
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
+
+.links-menu:active {
+    transform: scale(0.8);
+    transition-duration: .2s;
+}
+
+/* Caixa de pesquisa */
+#container-pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar {
+    opacity: 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 1em;
+    background-color: #444;
+    color: white;
+    margin-right: 34px;
+    border: none;
+}
+
+#input-pesquisar.pesquisar {
+    animation: aparecer .6s forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        width: 250px;
+    }
+}
+
+.lupa {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+.x {
+    display: none;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+/* CONTAINER PRINCIPAL */
+
+#container-principal {
+    padding: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 90%;
+    /*box-shadow: 2px 4px 20px var(--cor1);*/
+    border-radius: 5px 5px 5px 5px;
+}
+
+.titulo-jogos {
+    font-family: var(--fonte-estilo);
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    z-index: 2;
+    position: sticky;
+    top: 15px;
+    /*text-shadow: 0px 1px 4px var(--cor1);*/
+}
+
+/* Mostrar Jogos */
+
+#jogos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#jogos a {
+    color: black;
+    text-decoration: none;
+    width: 45%;
+    margin-bottom: 80px;
+}
+
+#jogos img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #444;
+}
+
+#jogos img:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+}
+
+#jogos div {
+    cursor: default;
+}
+
+.p-des {
+    margin-bottom: 10px;
+}
+
+.nome-jogos {
+    font-family: var(--fonte-titulo-jogos);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.preco-jogos::before {
+    content: "Preço: ";
+    font-weight: bold;
+}
+
+.desenvolvedor-jogos::before {
+    content: "Desenvolvedor: ";
+    font-weight: bold;
+}
+
+.lancamento-jogos::before {
+    content: "Lançamento: ";
+    font-weight: bold;
+}
+
+.plataformas-jogos::before {
+    content: "Plataformas: ";
+    font-weight: bold;
+}
+
+.generos-jogos::before {
+    content: "Gêneros: ";
+    font-weight: bold;
+}
+
+.sinopse-jogos::before {
+    content: "Sinopse: ";
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+#rodape {
+    /*background-color: var(--cor2);*/
+    background-color: #eee;
+    font-family: var(--fonte-estilo);
+    /*color: white;*/
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #aaa;
+}
+
+.img-rodape {
+    cursor: pointer;
+    margin: 10px;
+}
