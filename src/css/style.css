@@ -5,13 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
-    /*
-  --cor1: #9ee4ff;
-  --cor2: #6eb2f2;
-  --cor3: #5287e9;
-  --cor4: #3f71cc;
-  --cor5: #075197;
-*/
     --fonte-padrao: 'Poppins', 'Arial', sans-serif;
     --fonte-titulo-jogos: 'Open Sans', sans-serif;
     --fonte-estilo: 'Major Mono Display', monospace;
@@ -30,9 +23,7 @@ body {
 /* CABEÇALHO */
 
 #cabecalho {
-    /*background-color: var(--cor2);*/
     height: 100px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,17 +42,6 @@ body {
     left: 40px;
 }
 
-/*
-#logo:hover {
-  animation: rodar .6s forwards;
-}
-
-@keyframes rodar {
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/
 #cabecalho>h1 {
     font-family: var(--fonte-estilo);
     font-size: 2em;
@@ -76,7 +56,6 @@ body {
     height: 60px;
     padding: 0px 20px;
     background-color: #eee;
-    /*box-shadow: 2px 2px 8px var(--cor3);*/
     border-bottom: 1px solid #aaa;
     position: sticky;
     top: 0px;
@@ -97,8 +76,6 @@ body {
 }
 
 .links-menu:hover {
-    /*background-color: var(--cor3);
-  color: white;*/
     transform: scale(1.1);
     transition-duration: .2s;
 }
@@ -157,9 +134,7 @@ body {
     padding: 40px;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 90%;
-    /*box-shadow: 2px 4px 20px var(--cor1);*/
-    border-radius: 5px 5px 5px 5px;
+    max-width: 1500px;
 }
 
 .titulo-jogos {
@@ -171,7 +146,6 @@ body {
     z-index: 2;
     position: sticky;
     top: 15px;
-    /*text-shadow: 0px 1px 4px var(--cor1);*/
 }
 
 /* Mostrar Jogos */
@@ -247,10 +221,8 @@ body {
 
 /* RODAPÉ */
 #rodape {
-    /*background-color: var(--cor2);*/
     background-color: #eee;
     font-family: var(--fonte-estilo);
-    /*color: white;*/
     text-align: center;
     padding: 20px;
     margin-top: 40px;

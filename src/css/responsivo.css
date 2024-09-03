@@ -1,0 +1,80 @@
+@media screen and (max-width:1200px) {
+    #container-pesquisar {
+        display: none;
+    }
+
+    #menu {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    #cabecalho {
+        height: 100px;
+    }
+
+    #cabecalho h1 {
+        font-size: 1.5em;
+    }
+
+    #cabecalho img {
+        max-width: 90px;
+    }
+
+    #logo {
+        top: 10px;
+    }
+
+    .titulo-jogos {
+        font-size: 1.2em;
+        position: static;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #cabecalho {
+        height: 60px;
+        display: block;
+        text-align: center;
+    }
+
+    #cabecalho img {
+        max-width: 70px;
+    }
+
+    #cabecalho h1 {
+        display: none;
+    }
+
+    #navegacao {
+        height: 40px;
+    }
+
+    #logo {
+        justify-content: center;
+        position: static;
+        cursor: pointer;
+    }
+
+    .titulo-jogos {
+        font-size: 1.2em;
+        position: static;
+        margin-bottom: 0px;
+    }
+
+    #container-principal {
+        width: 100%;
+    }
+
+    #jogos {
+        display: block;
+    }
+
+    #jogos img {
+        margin-top: 40px;
+    }
+
+    #rodape {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+}
