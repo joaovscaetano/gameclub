@@ -69,6 +69,10 @@
         display: block;
     }
 
+    #jogos div {
+        width: 100%;
+    }
+
     #jogos img {
         margin-top: 40px;
     }
